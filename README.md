@@ -143,7 +143,7 @@ with `-l` option:
 Functions defined:
 
 * `parse_map_file(map_filepath)` → returns a dictionary mapping each object (or archive member) to its `{ 'text': size, 'data': size, 'bss': size }`.
-* `print_size_like(per_object, list_individual)` → prints the size table. Pass `list_individual=True` for per-object output, or `False` to aggregate by library.
+* `print_size_like(per_object, list_individual, return_string=False)` → prints the size table. Pass `list_individual=True` for per-object output, or `False` to aggregate by library. If `return_string=True`, the output string is returned istead of being printed.
 
 ## License
 
